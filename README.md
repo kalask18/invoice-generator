@@ -1,22 +1,77 @@
 # Invoice Generator
 
-This project generates invoice output from Python.
+A simple desktop Invoice Generator built using Python and Tkinter.
 
-## Run
+## Features
+
+* Interactive graphical user interface
+* Customer information management
+* Product and quantity management
+* Unit price calculation
+* Automatic subtotal calculation
+* 10% sales tax calculation
+* Automatic total calculation
+* Input validation
+* Multiple products in a single invoice
+* DOCX invoice generation
+* New Invoice / Reset functionality
+* Interactive button hover effects
+* Windows executable support using PyInstaller
+
+## Technologies Used
+
+* Python
+* Tkinter
+* ttk
+* docxtpl
+* python-docx template
+* PyInstaller
+
+## How to Run
+
+Install the required package:
 
 ```bash
-python invoice_generator.py
+pip install docxtpl
 ```
 
-## Build
-
-To create a Windows executable with PyInstaller:
+Run the application:
 
 ```bash
-pyinstaller --onefile invoice_generator.py
+python main.py
 ```
 
-## Notes
+Make sure `invoice_template.docx` is available with the application.
 
-- The generated executable may appear in the `dist` folder.
-- The project excludes build artifacts and Python cache files via `.gitignore`.
+## Create Windows EXE
+
+Install PyInstaller:
+
+```bash
+pip install pyinstaller
+```
+
+Build the executable:
+
+```bash
+pyinstaller --onefile --windowed --add-data "invoice_template.docx;." main.py
+```
+
+The executable will be created inside the `dist` folder.
+
+## Project Structure
+
+```text
+Invoice-Generator/
+│
+├── main.py
+├── invoice_template.docx
+├── requirements.txt
+└── README.md
+```
+
+## Author
+
+Kalaiyarasu S
+
+B.Tech Artificial Intelligence and Data Science
