@@ -1,0 +1,6 @@
+# Runtime dependency for generating DOCX invoices
+# tkinter is included with Python, so no pip package is required for it.
+docxtpl>=0.16.0
+
+# Optional: for creating a Windows executable with PyInstaller
+pyinstaller>=6.0.0
